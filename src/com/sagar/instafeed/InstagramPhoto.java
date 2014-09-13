@@ -11,7 +11,7 @@ public class InstagramPhoto {
 	
 	public String getCreatedtime()
 	{
-		return DateUtils.getRelativeTimeSpanString(createdTime,System.currentTimeMillis(),DateUtils.FORMAT_ABBREV_RELATIVE).toString();
+		return DateUtils.getRelativeTimeSpanString(createdTime*1000,System.currentTimeMillis(),DateUtils.FORMAT_ABBREV_RELATIVE).toString();
 	}
 	
 }
